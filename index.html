@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./ICNSBT 2024_files/font-awesome.min.css" />
     <link rel="stylesheet" href="./ICNSBT 2024_files/owl.theme.css" />
     <link rel="stylesheet" href="./ICNSBT 2024_files/owl.carousel.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <style>
       .blinkText {
@@ -140,6 +142,11 @@
                 >Programme</a
               >
             </li>
+            <li>
+              <a href="#hotels"
+                >Hotels</a
+              >
+            </li>
             <!-- <li><a href="#venue">Venue</a></li> 
                 <li><a href="#sponsor">Sponsorship</a></li> -->
             <li>
@@ -170,8 +177,13 @@
     </div>
 
     <!-- Home Page Image a -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- <div class="swiper-slide"> -->
+
+      
     <div
-      class="wrapper bgded overlay"
+      class="wrapper bgded overlay swiper-slide"
       style="background-image: url(&#39;images/background/frontimage1.png&#39;)"
     >
       <div id="pageintro" class="hoc clear;">
@@ -286,6 +298,30 @@
         </article>
       </div>
     </div>
+    <div class="swiper-slide">
+      <!-- <div class="title">
+        <!-- <h2 class="title__text">Swiper JS 9</h2> --
+      </div> -->
+      <div class="slider-image">
+        <img
+          class="jgec_campus_img"
+          src="images/background/college_img.jpg"
+          alt="JGEC_campus"
+          style="width: 100%;height: 100%;background-size: cover;"
+        />
+      </div>
+    </div>
+
+
+
+
+  </div>
+  <div class="swiper-pagination"></div>
+
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+<script src="slider.js" ></script>
 
     <!-- About CSI -->
     <div id="about" class="wrapper row3">
@@ -303,7 +339,7 @@
                 association with Jalpaiguri Government Engineering College,
                 Medinipur, West Bengal, India organizing second International
                 Conference on Cryptography, Network Security and Blockchain
-                technology. This International Conference ICNSBT 2023 basically
+                technology. This International Conference ICNSBT 2024 basically
                 focused on Network Security, Privacy and Blockchain Technology
                 and its Applications. The Conference will be held during 6-8th
                 March 2024 at the Jalpaiguri government engineering college,
@@ -478,7 +514,7 @@
                     <a href="https://www.springer.com/series/15179"
                       >"Lecture Notes in Networks and Systems"</a
                     >
-                    (Confirmed). <br />
+                    (Proposed). <br />
                     <br />
                     <!-- Updated on 01March2023 -->
                   </p>
@@ -2826,7 +2862,7 @@ IEEE Computer Society: https://www.computer.org/profiles/amlan-chakrabarti
           <br />
           <br />
           <article>
-            <h5 style="background-color: #ff3; color: #000">Bank Details</h5>
+            <h5 style="background-color: #ff3; color: #000">Bank Details for Registration</h5>
             <p style="text-align: center; font-size: 16px">
               Account Name: "Computer Society of India, Kolkata Chapter" <br />
               Account Number: 02860100010844 <br />
@@ -2999,6 +3035,18 @@ IEEE Computer Society: https://www.computer.org/profiles/amlan-chakrabarti
     </div>
     <!-- End Program Schedule -->
 
+        <!-- Hotels Start -->
+        <div id="hotels" class="wrapper row2">
+          <section class="hoc container clear">
+            <div class="center btmspace-80">
+              <h6 class="heading underline font-x2">Hotels</h6>
+            </div>
+          </section>
+        </div>
+  
+      <!-- Hotels end  -->
+
+
     <!-- Venue Start  -->
     <div id="venue" class="wrapper row2">
       <section class="hoc container clear">
@@ -3052,13 +3100,14 @@ IEEE Computer Society: https://www.computer.org/profiles/amlan-chakrabarti
               <div class="excerpt">
                 <br />
                 <div id="gm1" class="googleMap">
-                  <iframe
+                  <!-- <iframe
                     src="./ICNSBT 2024_files/embed.html"
                     height="450"
                     frameborder="0"
                     style="border: 0"
                     allowfullscreen=""
-                  ></iframe>
+                  ></iframe> -->
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3569.19665832589!2d88.70117917467333!3d26.54594947575725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e47bce687f169d%3A0x4152036d0d736d37!2sJalpaiguri%20Government%20Engineering%20College!5e0!3m2!1sen!2sin!4v1687030327648!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <!---
             <ul class="meta">
@@ -3086,6 +3135,24 @@ IEEE Computer Society: https://www.computer.org/profiles/amlan-chakrabarti
     </div>
 
     <!--- Venue End -->
+    
+    <!-- Places to Visit Start -->
+    <div id="places_visit" class="wrapper row2">
+      <section class="hoc container clear">
+        <div  class="center btmspace-80">
+          <h6 class="heading underline font-x2">Places to Visit</h6>
+          <div class=" place_container" id="place_container">
+          </div>
+          <script src="places.js"></script>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- Places to visit end  -->
+
+
+
 
     <!--Address Contact Link Membership -->
     <div id="contact" class="wrapper row4">
@@ -3117,8 +3184,8 @@ IEEE Computer Society: https://www.computer.org/profiles/amlan-chakrabarti
           </address>
         </li> -->
             <li><i class="fas fa-phone"></i> +91-33-4006-5439</li>
-            <li><i class="fas fa-fax"></i> +91-33-2280-2035</li>
-            <li><i class="far fa-envelope"></i> csical@gmail.com</li>
+            <li><i class="fas fa-fax"></i> +918617098942</li>
+            <li><i class="far fa-envelope"></i> subhas.barman@cse.jgec.ac.in</li>
           </ul>
         </div>
         <div class="one_quarter">
