@@ -38,6 +38,31 @@ File: Layout CSS
 
 /* Page Intro
 --------------------------------------------------------------------------------------------------------------- */
+/* .swiper {
+    /* width: 100%;
+    height: 80vh;
+    height: 80svh; */
+    /* min-height: 320px; 
+    background-color: #46677b;
+} */
+/* .swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+}*/
+/* .swiper-slide::after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(359deg, #000 0%, #000 6.25%, #000 12.5%, #000 18.75%, #000 25%, #000 31.25%, #000 37.5%, #000 43.75%, #000 50%, #000 56.25%, #000 62.5%, #000 68.75%, #000 75%, #000 81.25%, #000 87.5%, #000 93.75%, #000 100%); 
+}  */
+.swiper-pagination,.swiper-button-prev,.swiper-button-next{
+	color: white !important;
+}
 #pageintro{padding:180px 0;}
 
 #pageintro article{}
@@ -313,7 +338,7 @@ label span{color:#FF0000; background-color:inherit;}
 input:focus, textarea:focus, *:required:focus{border-color:#82B7DF;}
 
 .overlay{color:#FFFFFF; background-color:inherit;}
-.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.5);}
 .overlay.dark::after{color:inherit; background-color:rgba(37,100,146,.85)/* #256492 */;}
 .overlay.light::after{background-color:rgba(130,183,223,.65)/* #82B7DF */;}
 
@@ -413,6 +438,62 @@ tr, #comments li, #comments input[type="submit"], #comments input[type="reset"]{
 tr:nth-child(even), #comments li:nth-child(even){color:inherit; background-color:#F7F7F7;}
 table a, #comments a{background-color:inherit;}
 
+
+/* Places to visit  */
+.place_container .slide {
+    /* border-radius: 10px; */
+    box-shadow: 0px 0px 5px #455a64;
+	border: 1px solid;
+    margin: 10px;
+	width: fit-content !important;
+	padding-bottom: 10px;
+}
+
+.place_container .heading {
+    text-align: center;
+    color: #455a64;
+}
+
+.place_container .slide .image {
+    /* position: relative; */
+    overflow: hidden;
+    height: 12rem;
+    width: 100%; 
+}
+
+.place_container .slide .image img {
+    height: 100%;
+    width: 100%;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.place_container .slide .content .button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.place_container .slide .content .button-container a {
+    /* font-size: 1rem; */
+    /* background-color: #FF725E; */
+    color: white;
+    padding: .5rem;
+    text-decoration: none;
+    border-radius: 10px;
+    /* width: 110px; */
+    transition: .3s all;
+}
+
+.place_container .slide .content .button-container a:hover {
+    background-color: white;
+    color: currentColor;
+    /* box-shadow: 0px 0px 4px #FF725E; */
+}
+.swiper-button-next-1,.swiper-button-prev-1,.swiper-pagination-1{
+	color: black !important;
+}
 
 /* ------------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------------ */
