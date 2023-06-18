@@ -4,7 +4,7 @@ Template Name: Shicso
 File: Layout CSS
 */
 
-@import url("fontawesome-free/css/fontawesome-all.min.css");
+/* @import url("fontawesome-free/css/fontawesome-all.min.css"); */
 @import url("framework.css");
 
 /* Rows
@@ -140,7 +140,10 @@ File: Layout CSS
 #cta{}
 
 #cta > :first-child{margin-top:10px; font-weight:700; text-transform:uppercase;}
-#cta > :last-child{margin-bottom:0;}/* Used when elements stack in smaller viewports */
+#cta > :last-child{margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;}/* Used when elements stack in smaller viewports */
 #cta footer{text-align:center;}
 #cta footer a{display:block;}
 
@@ -442,16 +445,17 @@ table a, #comments a{background-color:inherit;}
 /* Places to visit  */
 .place_container .slide {
     /* border-radius: 10px; */
-    box-shadow: 0px 0px 5px #455a64 !important;
-	border: 1px solid !important;
+    box-shadow: 0px 0px 2px #3B5998 !important;
+	/* border: 1px solid !important; */
     margin: 10px !important;
-	width: fit-content !important;
+	width: 300px !important;
 	padding-bottom: 10px !important;
 }
 
-.place_container .heading {
+.place_container h3 {
     text-align: center;
-    color: #455a64;
+    color: #256492;
+	font-weight: bold;
 }
 
 .place_container .slide .image {
@@ -484,6 +488,7 @@ table a, #comments a{background-color:inherit;}
     border-radius: 10px;
     /* width: 110px; */
     transition: .3s all;
+	text-transform: unset;
 }
 
 .place_container .slide .content .button-container a:hover {
