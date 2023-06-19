@@ -552,7 +552,14 @@ table a, #comments a{background-color:inherit;}
 	.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
 	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
 
-	#header{}
+	#header{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	#header .logo_csi{
+		margin-top:2.6%;
+	}
 
 	#pageintro{padding:150px 0;}
 	#pageintro .heading{font-size:2rem;}
@@ -593,11 +600,17 @@ table a, #comments a{background-color:inherit;}
 	}
 	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
 	.scrollable table{margin:0; padding:0; white-space:nowrap;}
-
+	
 	.inline li{display:block; margin-bottom:10px;}
 	.pushright {display: flex;flex-wrap: wrap;justify-content: center;gap: 10px;}
 	.pushright li{margin-right:0;}
 
 	.font-x2{font-size:1.6rem;}
 	.font-x3{font-size:1.8rem;}
+}
+
+@media screen and (max-width:430px) {
+	.letter_template .btn-lg{
+		font-size: 12px !important;
+	}
 }
