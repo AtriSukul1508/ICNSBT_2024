@@ -2,24 +2,55 @@ const places = [{
     placesToVisit: [
         {
             "name": "Darjeeling",
-            "images": "https://www.holidify.com/images/bgImages/MUSSOORIE.jpg",
-            "location": "https://www.google.co.in/maps/place/Mussoorie,+Uttarakhand/@30.4547186,78.0414204,13z/data=!3m1!4b1!4m5!3m4!1s0x3908d0cfa61cda5b:0x197fd47d980e85b1!8m2!3d30.4597892!4d78.0643723"
+            "images": "images/background/Darjeeling.jpg",
+            "location": "https://goo.gl/maps/BBJUgSgZsUGYoBmi8"
         },
         {
             "name": "Gorumara National Park",
-            "images": "https://www.holidify.com/images/bgImages/RISHIKESH.jpg",
+            "images": "images/background/Gorumara.jpg",
             "location": "https://goo.gl/maps/BgHbkbMuY9KFn19Z6"
         },
         {
             "name": "Kalimpong",
-            "images": "https://www.holidify.com/images/bgImages/BADRINATH%20.jpg",
-            "location": "https://www.google.co.in/maps/place/Badrinath,+Uttarakhand+246422/@30.7417338,79.4852149,15z/data=!3m1!4b1!4m5!3m4!1s0x39a78e9f973108e7:0xf05a8b5e0c71473!8m2!3d30.7433085!4d79.4937634"
+            "images": "images/background/Kalimpong.jpg",
+            "location": "https://goo.gl/maps/bs8HTUu581W5xXBg7"
         },
         {
             "name": "Mirik",
-            "images": "https://www.holidify.com/images/bgImages/HARIDWAR.jpg",
-            "location": "https://www.google.co.in/maps/place/Haridwar,+Uttarakhand/@29.9526313,78.0458849,12z/data=!3m1!4b1!4m5!3m4!1s0x3909470eb8ee57c9:0x4e449176a640f5f3!8m2!3d29.9456906!4d78.1642478"
+            "images": "images/background/Mirik.jpeg",
+            "location": "https://goo.gl/maps/VznfwYUNsyV9urEw7"
+        },
+        {
+            "name": "Kurseong",
+            "images": "https://upload.wikimedia.org/wikipedia/commons/4/42/Kurseong_panorama_by_Mayukh_Ghose.jpg",
+            "location": "https://goo.gl/maps/ehj67QFLvWCFi1RJ8"
+        },
+        {
+            "name": "Lava",
+            "images": "images/background/Lava.jpg",
+            "location": "https://goo.gl/maps/X9GoVXJPbG4otYYX8"
+        },
+        {
+            "name": "Ghum",
+            "images": "images/background/Ghum.jpg",
+            "location": "https://goo.gl/maps/6uKdxcbp7A42dmw86"
+        },
+        {
+            "name": "Jaldapara National Park",
+            "images": "images/background/Jaldapara.jpg",
+            "location": "https://goo.gl/maps/iXPss2D6spnz2ebZ8"
+        },
+        {
+            "name": "Sikkim",
+            "images": "images/background/Sikkim.jpg",
+            "location": "https://goo.gl/maps/D3UxTBgc8Qu1RAVf6"
+        },
+        {
+            "name": "Cooch Behar",
+            "images": "images/background/Cooch_Behar.jpg",
+            "location": "https://goo.gl/maps/sntshZ69QXYmVgjh9"
         }]
+        
 }]
 
 const showLocationInfo = (info) => {
@@ -82,22 +113,6 @@ const settings1 = {
             slidesPerView: 4,
         },
     },
-    // loop: true,
-  
-    // speed: 700,
-    // autoplay: {
-    //     delay: 50000,
-    //   },
-  
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   type: "fraction",
-    // },
-  
-    // navigation: {
-    //   nextEl: ".swiper-button-next",
-    //   prevEl: ".swiper-button-prev"
-    // }
   };
   
   const swiper1 = new Swiper(".place-slider", settings1);
