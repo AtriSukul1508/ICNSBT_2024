@@ -97,7 +97,7 @@ const settings1 = {
         prevEl: ".swiper-button-prev-1",
     },
     autoplay: {
-        delay: 3000,
+        delay: 2000,
     },
     breakpoints: {
         0: {
