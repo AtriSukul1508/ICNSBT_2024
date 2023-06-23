@@ -18,4 +18,3 @@ const settings = {
   };
   
   const swiper = new Swiper(".mySwiper", settings);
-  
