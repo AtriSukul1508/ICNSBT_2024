@@ -613,6 +613,11 @@ table a, #comments a{background-color:inherit;}
 
 	.font-x2{font-size:1.6rem;}
 	.font-x3{font-size:1.8rem;}
+	.overlay-1, .overlay-2{
+		height: 100rem;
+		display: flex;
+		align-items: center;
+	}
 }
 
 @media screen and (max-width:430px) {
